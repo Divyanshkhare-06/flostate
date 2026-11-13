@@ -2,6 +2,7 @@
   "name": "flowstate",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://divyanshkhare-06.github.io/flostate/",
   "type": "module",
   "scripts": {
     "dev": "vite",

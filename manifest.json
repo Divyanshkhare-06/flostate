@@ -1,0 +1,70 @@
+{
+  "id": "flowstate-pwa",
+  "name": "FLOWSTATE — Focus Better. Live Better.",
+  "short_name": "FLOWSTATE",
+  "description": "A serene digital wellness web application for mindful focus, digital detox, and healthy sleep.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "window-controls-overlay", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "background_color": "#F8F8FC",
+  "theme_color": "#171A2E",
+  "categories": ["productivity", "health", "lifestyle", "education"],
+  "icons": [
+    {
+      "src": "./pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Focus Studio",
+      "short_name": "Focus",
+      "description": "Start a distraction-free focus session",
+      "url": "./#/focus",
+      "icons": [{ "src": "./pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Digital Detox",
+      "short_name": "Detox",
+      "description": "Audit notifications and mindful scroll",
+      "url": "./#/detox",
+      "icons": [{ "src": "./pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Sleep & Relax",
+      "short_name": "Sleep",
+      "description": "Night routine and Digital Sunset",
+      "url": "./#/sleep",
+      "icons": [{ "src": "./pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "My Garden",
+      "short_name": "Garden",
+      "description": "Check daily habits and plant growth",
+      "url": "./#/garden",
+      "icons": [{ "src": "./pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

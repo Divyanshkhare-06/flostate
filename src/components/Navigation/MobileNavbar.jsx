@@ -17,6 +17,7 @@ import {
   VolumeX,
 } from 'lucide-react';
 import { useFlowstate } from '../../context/FlowstateContext';
+import { InstallAppButton } from '../Common/InstallAppPrompt';
 
 export function MobileNavbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -56,6 +57,9 @@ export function MobileNavbar() {
         </div>
 
         <div className="flex items-center gap-2">
+          {/* Quick Install Button on Mobile */}
+          <InstallAppButton className="text-[11px] py-1 px-2.5" />
+
           {/* Digital Sunset Toggle */}
           <button
             onClick={() => setDigitalSunsetActive(!digitalSunsetActive)}

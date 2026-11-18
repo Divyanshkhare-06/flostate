@@ -15,6 +15,7 @@ import {
   VolumeX,
 } from 'lucide-react';
 import { useFlowstate } from '../../context/FlowstateContext';
+import { InstallAppButton } from '../Common/InstallAppPrompt';
 
 export function DesktopSidebar() {
   const {
@@ -152,6 +153,9 @@ export function DesktopSidebar() {
             )}
           </button>
         </div>
+
+        {/* Install PWA Button */}
+        <InstallAppButton className="w-full justify-center" />
 
         {/* User Profile Snippet */}
         <div className="flex items-center gap-3 px-2 py-1">

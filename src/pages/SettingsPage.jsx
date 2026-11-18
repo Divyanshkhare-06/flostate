@@ -23,6 +23,7 @@ import {
 import { useFlowstate } from '../context/FlowstateContext';
 import { Card } from '../components/Common/Card';
 import { Modal } from '../components/Common/Modal';
+import { InstallAppButton } from '../components/Common/InstallAppPrompt';
 
 export function SettingsPage() {
   const navigate = useNavigate();
@@ -369,7 +370,25 @@ export function SettingsPage() {
           </div>
         </Card>
 
-        {/* 5. APPLICATION INFORMATION */}
+        {/* 5. INSTALL AS APP (PWA) */}
+        <Card className="p-6 bg-gradient-to-br from-[var(--bg-card)] to-[var(--bg-card-subtle)]">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <Sparkles className="w-4 h-4 text-[var(--accent-lavender-dark)]" />
+                <h2 className="text-sm font-bold text-[var(--text-primary)] uppercase tracking-wider">
+                  Install as Native App
+                </h2>
+              </div>
+              <p className="text-xs text-[var(--text-secondary)] max-w-md">
+                Install FLOWSTATE directly onto your iPhone, Android, Mac, or Windows machine. Runs full-screen with offline support and zero browser address bar clutter.
+              </p>
+            </div>
+            <InstallAppButton className="shrink-0" />
+          </div>
+        </Card>
+
+        {/* 6. APPLICATION INFORMATION */}
         <div className="p-5 rounded-2xl bg-[var(--bg-card)] border border-[var(--border-subtle)] text-xs text-[var(--text-secondary)] space-y-2">
           <div className="flex items-center gap-2 text-[var(--text-primary)] font-semibold">
             <Info className="w-4 h-4 text-[var(--accent-lavender-dark)]" />
